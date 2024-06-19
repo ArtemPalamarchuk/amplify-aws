@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("../fonts/Inter/Inter-Regular.woff");
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("../fonts/Inter/Inter-Medium.woff");
+}
+
+@font-face {
+  font-family: "Inter-Semibold";
+  src: url("../fonts/Inter/Inter-Semibold.woff");
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../fonts/Inter/Inter-Bold.woff");
+}
+
+@layer base {
+  html {
+    font-family: Inter, system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .default-border {
+    @apply border-secondary-font border-solid border-[1px] rounded-2xl;
+  }
+  .container {
+    @apply w-full h-auto border bg-white mx-auto md:mx-0;
+  }
+}
+
+@layer utilities {
+}
+
+body {
+  @apply min-h-screen;
+}
